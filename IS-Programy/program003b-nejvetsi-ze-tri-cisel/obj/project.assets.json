@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\aaa\\IS-2025-Sk2\\github-tz-is-2025-sk2\\program003b-nejvetsi-ze-tri-cisel\\program003b-nejvetsi-ze-tri-cisel.csproj",
+      "projectUniqueName": "C:\\aaa\\IS-2025-Sk2\\github-tz-is-2025-sk2\\IS-Programy\\program003b-nejvetsi-ze-tri-cisel\\program003b-nejvetsi-ze-tri-cisel.csproj",
       "projectName": "program003b-nejvetsi-ze-tri-cisel",
-      "projectPath": "C:\\aaa\\IS-2025-Sk2\\github-tz-is-2025-sk2\\program003b-nejvetsi-ze-tri-cisel\\program003b-nejvetsi-ze-tri-cisel.csproj",
+      "projectPath": "C:\\aaa\\IS-2025-Sk2\\github-tz-is-2025-sk2\\IS-Programy\\program003b-nejvetsi-ze-tri-cisel\\program003b-nejvetsi-ze-tri-cisel.csproj",
       "packagesPath": "C:\\Users\\Uzivatel\\.nuget\\packages\\",
-      "outputPath": "C:\\aaa\\IS-2025-Sk2\\github-tz-is-2025-sk2\\program003b-nejvetsi-ze-tri-cisel\\obj\\",
+      "outputPath": "C:\\aaa\\IS-2025-Sk2\\github-tz-is-2025-sk2\\IS-Programy\\program003b-nejvetsi-ze-tri-cisel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Uzivatel\\AppData\\Roaming\\NuGet\\NuGet.Config"
