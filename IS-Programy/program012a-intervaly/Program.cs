@@ -62,10 +62,10 @@
                     int4++; 
            }
 
-            Console.WriteLine("\nInterval <{0}, {1}>: {2}", dm, 0.25 * hm, int1);
-            Console.WriteLine("Interval <{0}, {1}>: {2}", 0.25 * hm + 1, 0.5 * hm, int2);
-            Console.WriteLine("Interval <{0}, {1}>: {2}", 0.5 * hm + 1, 0.75 * hm, int3);
-            Console.WriteLine("Interval <{0}, {1}>: {2}", 0.75 * hm  + 1, hm, int4);
+            Console.WriteLine("\nInterval <{0}; {1}>: {2}", dm, 0.25 * hm, int1);
+            Console.WriteLine("Interval <{0}; {1}>: {2}", 0.25 * hm + 1, 0.5 * hm, int2);
+            Console.WriteLine("Interval <{0}; {1}>: {2}", 0.5 * hm + 1, 0.75 * hm, int3);
+            Console.WriteLine("Interval <{0}; {1}>: {2}", 0.75 * hm  + 1, hm, int4);
 
             Console.WriteLine();
             Console.WriteLine("Pro opakování programu stiskněte klávesu A");
