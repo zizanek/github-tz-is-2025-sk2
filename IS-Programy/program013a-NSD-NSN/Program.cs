@@ -3,33 +3,16 @@ string again = "a";
 while (again == "a")
 {
     Console.Clear();
-    Console.WriteLine("********************************************");
-    Console.WriteLine("*********** Název programu *************");
-    Console.WriteLine("********************************************");
-    Console.WriteLine("********************************************");
-    Console.WriteLine("************* Tomáš Žižka ******************");
-    Console.WriteLine("************** 2.10.2025 *******************");
-    Console.WriteLine("********************************************");
-    Console.WriteLine("********************************************");
-    Console.WriteLine();
+    // Metoda pro výpis hlavičky/razítka
+    razitko();
+    ulong a = nactiCislo("Zadejte přirozené číslo a: ");
+    ulong b = nactiCislo("Zadejte přirozené číslo b: ");
+    
+    ulong nsd = vypocitatNSD(a, b);
+    ulong nsn = vypocitatNSN(a, b, nsd);
+    
 
-    // Vstup hodnoty do programu, ale špatně řešený
-    //Console.Write("Zadejte první číslo řady: ");
-    //int first = int.Parse(Console.ReadLine());
-
-    // Vstup hodnoty do programu, řešený lépe
-    Console.Write("Zadejte první číslo řady (celé číslo): ");
-    int first;
-    while (!int.TryParse(Console.ReadLine(), out first))
-    {
-        Console.Write("Nezadali jste celé číslo. Zadejte první číslo řady znovu: ");
-    }
-
-
-
-
-
-
+    zobrazitVysledky(a, b, nsd, nsn);
 
 
     Console.WriteLine();
@@ -37,5 +20,62 @@ while (again == "a")
     again = Console.ReadLine();
 
 }
+
+
+static void razitko()
+{
+    Console.WriteLine("********************************************");
+    Console.WriteLine("*********** Výpočet NSD a NSN *************");
+    Console.WriteLine("********************************************");
+    Console.WriteLine("********************************************");
+    Console.WriteLine("************* Tomáš Žižka ******************");
+    Console.WriteLine("************** 11.12.2025 *******************");
+    Console.WriteLine("********************************************");
+    Console.WriteLine("********************************************");
+    Console.WriteLine();
+}
+
+
+static ulong nactiCislo(string zprava) {
+    Console.Write(zprava);
+    ulong cislo;
+    while (!ulong.TryParse(Console.ReadLine(), out cislo))
+    {
+        Console.Write("Nezadali jste přirozené číslo. Zadejte vstup znovu: ");
+    }
+    return cislo;
+}
+
+
+static ulong vypocitatNSD(ulong a, ulong b) {
+    while(a != b) {
+        if (a > b)
+            a = a - b;
+        else
+            b = b - a;     
+    }
+    return a;
+}
+
+static void zobrazitVysledky(ulong a, ulong b, ulong nsd, ulong nsn) {
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
+    Console.WriteLine();
+    Console.WriteLine("=========================================");
+    Console.WriteLine($"NSD čísel {a} a {b} je {nsd}");
+    Console.WriteLine("-----------------------------------------");
+    Console.ForegroundColor = ConsoleColor.Cyan;
+    Console.WriteLine($"NSN čísel {a} a {b} je {nsn}");
+    Console.ForegroundColor = ConsoleColor.White;
+}
+
+
+static ulong vypocitatNSN(ulong a, ulong b, ulong nsd)
+{
+    return (a*b)/nsd;;
+}
+
+
+
+
 
 
